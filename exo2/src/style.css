@@ -1,0 +1,118 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono';
+
+:root {
+    font-size: 18px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono';
+    font-size: 1em;
+}
+.calculette{
+        width: 250px;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        -webkit-box-shadow: 4px 4px 11px -4px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 4px 4px 11px -4px rgba(0, 0, 0, 0.75);
+        box-shadow: 4px 4px 11px -4px rgba(0, 0, 0, 0.75);
+        border: 1px solid #444;
+        background: #111;
+}
+
+.lesTouches{
+    color: #fff;
+    border: none;
+    width: 29%;
+    height: 30px;
+    line-height: 5px;
+    margin-right: 3%;
+    margin-bottom: 5px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius:50px;
+    border: 1px solid #444;
+}
+.lesTouches:hover{
+    background: #444;
+}
+
+.result{
+    color: #fff;
+    border: none;
+    width: 63%;
+    height: 30px;
+    line-height: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+    align-items: center;
+    border-radius:50px;
+    border: 1px solid #2ecc71;
+    background: #2ecc71;
+}
+.result:hover{
+    opacity: 0.8;
+}
+.laTouche{
+    display: flex;
+    width:75%;
+    flex-wrap: wrap;
+
+}
+.operateurs{
+    width:20%;
+    padding-bottom:5%;
+}
+
+.operateurs .lesTouches{
+width: 99%;
+border: 1px solid orange;
+}
+.operateurs .lesTouches:hover{
+    background: orange
+}
+
+.resultat{
+    width: 90%;
+    height: 75px;
+    background: #111;
+    margin-bottom: 5px;
+    position: relative;
+    color:#fff;
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center;
+    padding-right: 5%;
+    font-size: 2em;
+}
+.renew{
+    background: #e74c3c;
+    width: 99%;
+    height: 30px;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius:50px;
+}
+.renew:hover{
+    opacity:0.8;
+}
+h1{
+    font-size:1.2em;
+    color:#fff;
+}
