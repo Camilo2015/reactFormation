@@ -1,6 +1,6 @@
 import * as ActionTypes from './ActionTypes';
 
-export const AppReducer = (state = {operations: [], resultat:0}, action) => {
+export const AppReducer = (state = {operations: [], resultat:0, savedResult: []}, action) => {
     switch (action.type) {
         case ActionTypes.ADD_OPERATION:
         return{...state,
@@ -15,10 +15,17 @@ export const AppReducer = (state = {operations: [], resultat:0}, action) => {
                 operations: [Math.fround(eval(newCalcul))],
                 resultat: eval(newCalcul)
             }; 
+        case ActionTypes.ADD_RESULT: 
+        const addResult = state.resultat;
+        return {...state, 
+            savedResult: state.savedResult.concat(addResult)
+        }; 
         case ActionTypes.RENEW:
+        
             return {
                 operations: [],
-                resultat: 0
+                resultat: 0, 
+                savedResult: state.savedResult
             };
         default:            
             return state; 

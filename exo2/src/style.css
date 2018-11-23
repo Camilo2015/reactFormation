@@ -14,6 +14,7 @@ body {
     align-items: center;
     font-family: 'Roboto Mono';
     font-size: 1em;
+    color:#FFF;
 }
 .calculette{
         width: 250px;
@@ -27,6 +28,10 @@ body {
         box-shadow: 4px 4px 11px -4px rgba(0, 0, 0, 0.75);
         border: 1px solid #444;
         background: #111;
+        min-height: 250px;
+}
+.calculette ul{
+    list-style-type: none;
 }
 
 .lesTouches{
@@ -115,4 +120,15 @@ border: 1px solid orange;
 h1{
     font-size:1.2em;
     color:#fff;
+}
+.picto{
+    height: 2vh;
+}
+a{
+    text-decoration: none; 
+    color:#000;
+}
+.histo{
+    justify-content: flex-start;
+    align-items: flex-start;
 }

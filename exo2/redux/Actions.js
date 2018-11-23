@@ -14,3 +14,8 @@ export const renewAction = (operation) => ({
     type: ActionTypes.RENEW,
     payload: operation
 });
+
+export const addResultAction = (result) => ({
+    type: ActionTypes.ADD_RESULT,
+    payload: result
+});
